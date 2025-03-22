@@ -9,24 +9,24 @@
         <meta name="author" content="Coderthemes" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assetss/images/favicon.ico">
+        <link rel="shortcut icon" href="{{ asset('assetss/images/favicon.ico') }}">
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="assetss/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="{{ asset('assetss/css/bootstrap.min.css') }}" type="text/css">
 
         <!--Material Icon -->
-        <link rel="stylesheet" type="text/css" href="assetss/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('assetss/css/materialdesignicons.min.css') }}" />
 
         <!-- pe-7 Icon -->
-        <link rel="stylesheet" type="text/css" href="assetss/css/pe-icon-7-stroke.css" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('assetss/css/pe-icon-7-stroke.css') }}" />
 
         <!-- owl carousel css -->
-        <link rel="stylesheet" type="text/css" href="assetss/css/owl.carousel.css">
-        <link rel="stylesheet" type="text/css" href="assetss/css/owl.theme.css">
-        <link rel="stylesheet" type="text/css" href="assetss/css/owl.transitions.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assetss/css/owl.carousel.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assetss/css/owl.theme.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assetss/css/owl.transitions.css') }}">
 
         <!-- Custom  sCss -->
-        <link rel="stylesheet" type="text/css" href="assetss/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('assetss/css/style.css') }}" />
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -45,8 +45,8 @@
             <div class="container-fluid">
                 <!-- LOGO -->
                 <a class="logo text-uppercase" href="">
-                    <img src="assetss/images/logo-light.png" alt="" class="logo-light" height="34" style="height: 34px!important;" />
-                    <img src="assetss/images/logo-dark.png" alt="" class="logo-dark" height="34" style="height: 34px!important;" />
+                    <img src="{{ asset('assetss/images/logo-light.png') }}" alt="" class="logo-light" height="34" style="height: 34px!important;" />
+                    <img src="{{ asset('assetss/images/logo-dark.png') }}" alt="" class="logo-dark" height="34" style="height: 34px!important;" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-lg-6 offset-lg-1">
                         <div class="home-img mt-5 mt-lg-0">
-                            <img src="assetss/images/home-img.png" alt="" class="img-fluid mx-auto d-block">
+                            <img src="{{ asset('assetss/images/home-img.png') }}" alt="" class="img-fluid mx-auto d-block">
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
             </div>
             <!-- container-fluid end -->
             <div class="bg-pattern-effect">
-                <img src="assetss/images/bg-pattern.png" alt="">
+                <img src="{{ asset('assetss/images/bg-pattern.png') }}" alt="">
             </div>
 
         </section>
@@ -311,7 +311,7 @@
                 <div class="row align-items-end">
                     <div class="col-lg-6">
                         <div class="contact-img d-none d-lg-block">
-                            <img src="assetss/images/contact-us.svg" alt="" class="img-fluid mx-auto d-block">
+                            <img src="{{ asset('assetss/images/contact-us.svg') }}" alt="" class="img-fluid mx-auto d-block">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -370,7 +370,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="mb-3">
-                            <img src="assetss/images/logo-light.png" alt="" height="20">
+                            <img src="{{ asset('assetss/images/logo-light.png') }}" alt="" height="20">
                         </div>
                         <p>SiBapDos adalah website yang dirancang untuk memudahkan pengelolaan berita acara perkuliahan dan absensi perkuliahan. Dengan SiBapDos, Anda dapat dengan mudah mengakses jadwal matakuliah, mencatat kehadiran, dan mendapatkan informasi terkait perkuliahan lainnya.</p>
                         <div class="pt-1">
@@ -399,16 +399,16 @@
         <!-- footer end -->
 
         <!-- Javascript -->
-        <script src="assetss/js/jquery.min.js"></script>
-        <script src="assetss/js/bootstrap.bundle.min.js"></script>
-        <script src="assetss/js/jquery.easing.min.js"></script>
-        <script src="assetss/js/scrollspy.min.js"></script>
+        <script src="{{ asset('assetss/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('assetss/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('assetss/js/jquery.easing.min.js') }}"></script>
+        <script src="{{ asset('assetss/js/scrollspy.min.js') }}"></script>
 
         <!-- owl-carousel -->
-        <script src="assetss/js/owl.carousel.min.js"></script>
+        <script src="{{ asset('assetss/js/owl.carousel.min.js') }}"></script>
 
         <!-- custom js -->
-        <script src="assetss/js/app.js"></script>
+        <script src="{{ asset('assetss/js/app.js') }}"></script>
 
         <script>
             $(document).ready(function(){
