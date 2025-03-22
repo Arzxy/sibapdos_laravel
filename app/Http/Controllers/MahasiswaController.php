@@ -8,6 +8,6 @@ class MahasiswaController extends Controller
 {
     Public function index()
     {
-        return view('landingpage');
+        return view('mahasiswa.master');
     }
 }

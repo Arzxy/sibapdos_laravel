@@ -8,6 +8,6 @@ class SekprodiController extends Controller
 {
     Public function index()
     {
-        return view('landingpage');
+        return view('sekprodi.master');
     }
 }
