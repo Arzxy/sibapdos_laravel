@@ -8,6 +8,6 @@ class IndexController extends Controller
 {
     Public function index()
     {
-        return view('dashboard');
+        return view('landingpage');
     }
 }
