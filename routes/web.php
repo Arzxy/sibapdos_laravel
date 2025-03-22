@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\SekprodiController;
+use App\Http\Controllers\DosenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +21,7 @@ use App\Http\Controllers\LoginController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
+
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+Route::get('/sekprodi', [SekprodiController::class, 'index']);
+Route::get('/dosen', [DosenController::class, 'index']);

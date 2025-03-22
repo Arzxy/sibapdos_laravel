@@ -8,19 +8,19 @@
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
 
         <!-- jvectormap -->
-        <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
+        <link href="{{ asset('assets/libs/jqvmap/jqvmap.min.css') }}" rel="stylesheet" />
 
         <!-- DataTables -->
-        <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css"/>        
+        <link href="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('assets/libs/datatables/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css"/>        
 
         <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -81,7 +81,7 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <img src="{{ asset('assets/images/users/avatar-2.jpg') }}" class="img-fluid rounded-circle" alt="" /> </div>
                                         <p class="notify-details">Cristina Pride</p>
                                         <p class="text-muted mb-0 user-msg">
                                             <small>Hi, How are you? What about our next meeting</small>
@@ -97,7 +97,7 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <img src="{{ asset('assets/images/users/avatar-4.jpg') }}" class="img-fluid rounded-circle" alt="" /> </div>
                                         <p class="notify-details">Karen Robinson</p>
                                         <p class="text-muted mb-0 user-msg">
                                             <small>Wow that's great</small>
@@ -127,7 +127,7 @@
     
                         <li class="dropdown notification-list">
                             <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-circle">
+                                <img src="{{ asset('assets/images/users/avatar-4.jpg') }}" alt="user-image" class="rounded-circle">
                                 <span class="pro-user-name ml-1">
                                     Agnes K <i class="mdi mdi-chevron-down"></i> 
                                 </span>
@@ -181,10 +181,10 @@
                         <li class="float-left logo-box">
                             <a href="index.php" class="logo">
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-light.png" alt="" height="22">
+                                    <img src="{{ asset('assets/images/logo-light.png') }}" alt="" height="22">
                                 </span>
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.png" alt="" height="24">
+                                    <img src="{{ asset('assets/images/logo-sm.png') }}" alt="" height="24">
                                 </span>
                             </a>
                         </li>
@@ -320,9 +320,9 @@
                             <p class="text-muted">March 26 - April 01</p>
                             <div class="mb-3 mt-4">
                                 <div class="float-right d-none d-xl-block">
-                                    <img src="assets/images/cards/visa.png" alt="user-card" height="28" />
-                                    <img src="assets/images/cards/master.png" alt="user-card" height="28" />
-                                    <img src="assets/images/cards/american-express.png" alt="user-card" height="28" />
+                                    <img src="{{ asset('assets/images/cards/visa.png') }}" alt="user-card" height="28" />
+                                    <img src="{{ asset('assets/images/cards/master.png') }}" alt="user-card" height="28" />
+                                    <img src="{{ asset('assets/images/cards/american-express.png') }}" alt="user-card" height="28" />
                                 </div>
                                 <h2 class="font-weight-light">$8,459.56</h2>
                             </div>
@@ -490,11 +490,11 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-2.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-2.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Imelda J. Stanberry</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/visa.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/visa.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 3256</span>
                                             </td>
                                             <td>27.03.2018</td>
@@ -503,11 +503,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-3.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-3.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Francisca S. Lobb</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/master.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/master.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 8451</span>
                                             </td>
                                             <td>28.03.2018</td>
@@ -516,11 +516,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-1.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-1.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">James A. Wert</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/amazon.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/amazon.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 2258</span>
                                             </td>
                                             <td>28.03.2018</td>
@@ -529,11 +529,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-4.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-4.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Dolores J. Pooley</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/american-express.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/american-express.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 6950</span>
                                             </td>
                                             <td>29.03.2018</td>
@@ -542,11 +542,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-5.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-5.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Karen I. McCluskey</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/discover.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/discover.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 0021</span>
                                             </td>
                                             <td>31.03.2018</td>
@@ -555,11 +555,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-6.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-6.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Kenneth J. Melendez</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/visa.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/visa.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 2840</span>
                                             </td>
                                             <td>27.03.2018</td>
@@ -568,11 +568,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-7.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-7.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Sandra M. Nicholas</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/master.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/master.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 2015</span>
                                             </td>
                                             <td>28.03.2018</td>
@@ -581,11 +581,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-8.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-8.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Ronald S. Taylor</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/amazon.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/amazon.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 0325</span>
                                             </td>
                                             <td>28.03.2018</td>
@@ -594,11 +594,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-9.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-9.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Beatrice L. Iacovelli</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/discover.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/discover.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 9058</span>
                                             </td>
                                             <td>29.03.2018</td>
@@ -607,11 +607,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="assets/images/users/avatar-10.jpg" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
+                                                <img src="{{ asset('assets/images/users/avatar-10.jpg') }}" alt="user-pic" class="rounded-circle avatar-sm bx-shadow-lg" />
                                                 <span class="ml-2">Sylvia H. Parker</span>
                                             </td>
                                             <td>
-                                                <img src="assets/images/cards/discover.png" alt="user-card" height="24" />
+                                                <img src="{{ asset('assets/images/cards/discover.png') }}" alt="user-card" height="24" />
                                                 <span class="ml-2">**** 2577</span>
                                             </td>
                                             <td>31.03.2018</td>
@@ -640,7 +640,7 @@
 
                         <div class="card-box">
                             <div class="media">
-                                <img class="mr-3 rounded-circle bx-shadow-lg" src="assets/images/users/avatar-4.jpg" alt="Generic placeholder image" height="80">
+                                <img class="mr-3 rounded-circle bx-shadow-lg" src="{{ asset('assets/images/users/avatar-4.jpg') }}" alt="Generic placeholder image" height="80">
                                 <div class="media-body">
                                     <h5 class="mt-0">Louis P. Wheeler</h5>
                                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, at, tempus viverra turpis.
@@ -780,28 +780,28 @@
         <!-- end Footer -->
 
         <!-- Vendor js -->
-        <script src="assets/js/vendor.min.js"></script>
+        <script src="{{ asset('assets/js/vendor.min.js') }}"></script>
 
         <!-- KNOB JS -->
-        <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+        <script src="{{ asset('assets/libs/jquery-knob/jquery.knob.min.js') }}"></script>
         <!-- Chart JS -->
-        <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
+        <script src="{{ asset('assets/libs/chart-js/Chart.bundle.min.js') }}"></script>
 
         <!-- Jvector map -->
-        <script src="assets/libs/jqvmap/jquery.vmap.min.js"></script>
-        <script src="assets/libs/jqvmap/jquery.vmap.usa.js"></script>
+        <script src="{{ asset('assets/libs/jqvmap/jquery.vmap.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/jqvmap/jquery.vmap.usa.js') }}"></script>
         
         <!-- Datatable js -->
-        <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
-        <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
-        <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
-        <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="{{ asset('assets/libs/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/dataTables.responsive.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/responsive.bootstrap4.min.js') }}"></script>
         
         <!-- Dashboard Init JS -->
-        <script src="assets/js/pages/dashboard.init.js"></script>
+        <script src="{{ asset('assets/js/pages/dashboard.init.js') }}"></script>
         
         <!-- App js -->
-        <script src="assets/js/app.min.js"></script>
+        <script src="{{ asset('assets/js/app.min.js') }}"></script>
         
     </body>
 </html>
