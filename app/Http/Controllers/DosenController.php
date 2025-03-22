@@ -8,6 +8,6 @@ class DosenController extends Controller
 {
     Public function index()
     {
-        return view('dosen.master');
+        return view('dosen.index');
     }
 }
