@@ -200,7 +200,7 @@
                         <ul class="navigation-menu">
 
                             <li class="has-submenu">
-                                <a href="index.php">
+                                <a href="/">
                                     <i class="dripicons-meter"></i>Dashboard
                                 </a>
                             </li>
@@ -210,28 +210,25 @@
                                     <i class="dripicons-menu"></i>Data Master <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="alokasi_waktu.php">Data Alokasi Waktu</a>
+                                        <a href="/hari">Data Hari</a>
                                     </li>
                                     <li>
-                                        <a href="hari.php">Data Hari</a>
+                                        <a href="/ruang_kelas">Data Ruang Kelas</a>
                                     </li>
                                     <li>
-                                        <a href="ruang_kelas.php">Data Ruang Kelas</a>
+                                        <a href="/krs">Data KRS</a>
                                     </li>
                                     <li>
-                                        <a href="krs.php">Data KRS</a>
+                                        <a href="/mahasiswa">Data Mahasiswa</a>
                                     </li>
                                     <li>
-                                        <a href="mahasiswa.php">Data Mahasiswa</a>
+                                        <a href="/dosen">Data Dosen</a>
                                     </li>
                                     <li>
-                                        <a href="dosen.php">Data Dosen</a>
+                                        <a href="/matakuliah">Data Matakuliah</a>
                                     </li>
                                     <li>
-                                        <a href="matakuliah.php">Data Matakuliah</a>
-                                    </li>
-                                    <li>
-                                        <a href="prodi.php">Data Prodi</a>
+                                        <a href="/prodi">Data Prodi</a>
                                     </li>
                                 </ul>
                             </li>
@@ -241,7 +238,7 @@
                                     <i class="dripicons-menu"></i>Data Transaksi <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="dosen_pengampu.php">Data Dosen Pengampu</a>
+                                        <a href="/dosen_pengampu">Data Dosen Pengampu</a>
                                     </li>
                                 </ul>
                             </li>
@@ -251,16 +248,16 @@
                                     <i class="dripicons-menu"></i>Data Laporan <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="laporan_mahasiswa.php">Laporan Data Mahasiswa</a>
+                                        <a href="/laporan_mahasiswa">Laporan Data Mahasiswa</a>
                                     </li>
                                     <li>
-                                        <a href="laporan_dosen.php">Laporan Data Dosen</a>
+                                        <a href="/laporan_dosen">Laporan Data Dosen</a>
                                     </li>
                                     <li>
-                                        <a href="laporan_matakuliah.php">Laporan Data Matakuliah</a>
+                                        <a href="/laporan_matakuliah">Laporan Data Matakuliah</a>
                                     </li>
                                     <li>
-                                        <a href="laporan_dosen_pengampu.php">Laporan Data Dosen Pengampu</a>
+                                        <a href="/laporan_dosen_pengampu">Laporan Data Dosen Pengampu</a>
                                     </li>
                                 </ul>
                             </li>
