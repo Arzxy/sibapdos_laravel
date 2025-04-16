@@ -13,9 +13,11 @@
         <!-- jvectormap -->
         <link href="{{ asset('assets/libs/jqvmap/jqvmap.min.css') }}" rel="stylesheet" />
 
-        <!-- DataTables -->
-        <link href="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css"/>
-        <link href="{{ asset('assets/libs/datatables/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css"/>        
+        <!-- third party css -->
+        <link href="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/libs/datatables/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/libs/datatables/buttons.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/libs/datatables/select.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />    
 
         <!-- App css -->
         <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -332,14 +334,23 @@
         <script src="{{ asset('assets/libs/jqvmap/jquery.vmap.min.js') }}"></script>
         <script src="{{ asset('assets/libs/jqvmap/jquery.vmap.usa.js') }}"></script>
         
-        <!-- Datatable js -->
+        <!-- datatable js -->
         <script src="{{ asset('assets/libs/datatables/jquery.dataTables.min.js') }}"></script>
         <script src="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.js') }}"></script>
         <script src="{{ asset('assets/libs/datatables/dataTables.responsive.min.js') }}"></script>
         <script src="{{ asset('assets/libs/datatables/responsive.bootstrap4.min.js') }}"></script>
         
-        <!-- Dashboard Init JS -->
-        <script src="{{ asset('assets/js/pages/dashboard.init.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/dataTables.buttons.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/buttons.bootstrap4.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/buttons.html5.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/buttons.flash.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/buttons.print.min.js') }}"></script>
+
+        <script src="{{ asset('assets/libs/datatables/dataTables.keyTable.min.js') }}"></script>
+        <script src="{{ asset('assets/libs/datatables/dataTables.select.min.js') }}"></script>
+
+        <!-- Datatables init -->
+        <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
         
         <!-- App js -->
         <script src="{{ asset('assets/js/app.min.js') }}"></script>

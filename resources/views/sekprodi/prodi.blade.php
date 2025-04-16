@@ -40,4 +40,29 @@ Prodi
         </form>
     </div> <!-- end card-box -->
 </div><!-- end col -->
+<div class="col-12">
+    <div class="card-box">
+        <table id="datatable" class="table table-bordered dt-responsive nowrap responsive-table-plugin" style="width: 100%">
+            <thead>
+            <tr>
+                <th>Kode Prodi</th>
+                <th>Nama Prodi</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+
+            <tbody>
+            <tr>
+                <td>PR001</td>
+                <td>Teknologi Listrik (D3)</td>
+                <td>
+                    <button type="button" class="btn btn-icon btn-warning waves-effect waves-light">Edit&ensp;<i class="mdi mdi-wrench"></i> </button>
+                    <button type="button" class="btn btn-icon btn-danger waves-effect waves-light">Delete&ensp;<i class="mdi mdi-close"></i> </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div> <!-- end card-box -->
+</div> <!-- end col -->
 @endsection
