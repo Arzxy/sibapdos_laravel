@@ -64,7 +64,7 @@
                             <a href="#contact" class="nav-link">Bantuan</a>
                         </li>
                     </ul>
-                    <a target="_blank" href="login.php" class="btn btn-sm btn-primary btn-rounded navbar-btn">Login</a>
+                    <a target="_blank" href="/login" class="btn btn-sm btn-primary btn-rounded navbar-btn">Login</a>
                 </div>
             </div>
         </nav>

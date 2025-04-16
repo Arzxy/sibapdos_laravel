@@ -1,7 +1,7 @@
-@extends('dosen.master')
+@extends('sekprodi.master')
 
 @section('nama')
-Dosen
+Sekprodi
 @endsection
 
 @section('judul')

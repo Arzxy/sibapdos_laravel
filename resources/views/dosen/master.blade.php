@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>SiBapDos - Sekprodi</title>
+        <title>SiBapDos - @yield('nama')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -179,7 +179,7 @@
     
                     <ul class="list-unstyled menu-left mb-0">
                         <li class="float-left logo-box">
-                            <a href="index.php" class="logo">
+                            <a href="/dosen" class="logo">
                                 <span class="logo-lg">
                                     <img src="{{ asset('assets/images/logo-light.png') }}" alt="" height="22">
                                 </span>
@@ -200,7 +200,7 @@
                         <ul class="navigation-menu">
 
                             <li class="has-submenu">
-                                <a href="/">
+                                <a href="/dosen">
                                     <i class="dripicons-meter"></i>Dashboard
                                 </a>
                             </li>
@@ -210,25 +210,25 @@
                                     <i class="dripicons-menu"></i>Data Master <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/hari">Data Hari</a>
+                                        <a href="/dosen/hari">Data Hari</a>
                                     </li>
                                     <li>
-                                        <a href="/ruang_kelas">Data Ruang Kelas</a>
+                                        <a href="/dosen/ruang_kelas">Data Ruang Kelas</a>
                                     </li>
                                     <li>
-                                        <a href="/krs">Data KRS</a>
+                                        <a href="/dosen/krs">Data KRS</a>
                                     </li>
                                     <li>
-                                        <a href="/mahasiswa">Data Mahasiswa</a>
+                                        <a href="/dosen/mahasiswa">Data Mahasiswa</a>
                                     </li>
                                     <li>
-                                        <a href="/dosen">Data Dosen</a>
+                                        <a href="/dosen/dosen">Data Dosen</a>
                                     </li>
                                     <li>
-                                        <a href="/matakuliah">Data Matakuliah</a>
+                                        <a href="/dosen/matakuliah">Data Matakuliah</a>
                                     </li>
                                     <li>
-                                        <a href="/prodi">Data Prodi</a>
+                                        <a href="/dosen/prodi">Data Prodi</a>
                                     </li>
                                 </ul>
                             </li>
@@ -238,7 +238,7 @@
                                     <i class="dripicons-menu"></i>Data Transaksi <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/dosen_pengampu">Data Dosen Pengampu</a>
+                                        <a href="/dosen/dosen_pengampu">Data Dosen Pengampu</a>
                                     </li>
                                 </ul>
                             </li>
@@ -248,16 +248,16 @@
                                     <i class="dripicons-menu"></i>Data Laporan <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/laporan_mahasiswa">Laporan Data Mahasiswa</a>
+                                        <a href="/dosen/laporan_mahasiswa">Laporan Data Mahasiswa</a>
                                     </li>
                                     <li>
-                                        <a href="/laporan_dosen">Laporan Data Dosen</a>
+                                        <a href="/dosen/laporan_dosen">Laporan Data Dosen</a>
                                     </li>
                                     <li>
-                                        <a href="/laporan_matakuliah">Laporan Data Matakuliah</a>
+                                        <a href="/dosen/laporan_matakuliah">Laporan Data Matakuliah</a>
                                     </li>
                                     <li>
-                                        <a href="/laporan_dosen_pengampu">Laporan Data Dosen Pengampu</a>
+                                        <a href="/dosen/laporan_dosen_pengampu">Laporan Data Dosen Pengampu</a>
                                     </li>
                                 </ul>
                             </li>
@@ -286,7 +286,7 @@
                 <div class="page-title-box">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Sekprodi</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">@yield('nama')</a></li>
                             <li class="breadcrumb-item active">@yield('judul')</li>
                         </ol>
                     </div>

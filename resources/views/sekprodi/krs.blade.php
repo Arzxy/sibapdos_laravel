@@ -1,13 +1,13 @@
-@extends('dosen.master')
+@extends('sekprodi.master')
 
 @section('nama')
-Dosen
+Sekprodi
 @endsection
 
 @section('judul')
-Dashboard
+KRS
 @endsection
 
 @section('kontent')
-Dashboard
+Belom
 @endsection
