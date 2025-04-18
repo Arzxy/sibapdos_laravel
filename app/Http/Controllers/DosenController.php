@@ -10,4 +10,11 @@ class DosenController extends Controller
     {
         return view('dosen.index');
     }
+    public function absensi(){
+        return view ('dosen.absensi');
+    }
+    
+    public function tugas(){
+        return view ('dosen.tugas');
+    }
 }

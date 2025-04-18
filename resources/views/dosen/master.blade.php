@@ -212,25 +212,16 @@
                                     <i class="dripicons-menu"></i>Data Master <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/dosen/hari">Data Hari</a>
+                                        <a href="/dosen/absensi">Data Absensi</a>
                                     </li>
                                     <li>
-                                        <a href="/dosen/ruang_kelas">Data Ruang Kelas</a>
+                                        <a href="/dosen/tugas">Data Tugas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dosen/nilai">Data Nilai</a>
                                     </li>
                                     <li>
                                         <a href="/dosen/krs">Data KRS</a>
-                                    </li>
-                                    <li>
-                                        <a href="/dosen/mahasiswa">Data Mahasiswa</a>
-                                    </li>
-                                    <li>
-                                        <a href="/dosen/dosen">Data Dosen</a>
-                                    </li>
-                                    <li>
-                                        <a href="/dosen/matakuliah">Data Matakuliah</a>
-                                    </li>
-                                    <li>
-                                        <a href="/dosen/prodi">Data Prodi</a>
                                     </li>
                                 </ul>
                             </li>
@@ -240,7 +231,16 @@
                                     <i class="dripicons-menu"></i>Data Transaksi <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
+                                        <a href="/dosen/bap_dosen">Data BAP Dosen</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dosen/presensi_nilai_matakuliah">Data Presensi Nilai Matakuliah</a>
+                                    </li>
+                                    <li>
                                         <a href="/dosen/dosen_pengampu">Data Dosen Pengampu</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dosen/bap_absensi">Data BAP Absensi</a>
                                     </li>
                                 </ul>
                             </li>
@@ -250,13 +250,13 @@
                                     <i class="dripicons-menu"></i>Data Laporan <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li>
-                                        <a href="/dosen/laporan_mahasiswa">Laporan Data Mahasiswa</a>
+                                        <a href="/dosen/laporan_bap_absensi">Laporan BAP Absensi</a>
                                     </li>
                                     <li>
-                                        <a href="/dosen/laporan_dosen">Laporan Data Dosen</a>
+                                        <a href="/dosen/laporan_bap_dosen">Laporan BAP Dosen</a>
                                     </li>
                                     <li>
-                                        <a href="/dosen/laporan_matakuliah">Laporan Data Matakuliah</a>
+                                        <a href="/dosen/laporan_nilai_matakuliah">Laporan Presensi Nilai Matakuliah</a>
                                     </li>
                                     <li>
                                         <a href="/dosen/laporan_dosen_pengampu">Laporan Data Dosen Pengampu</a>

@@ -22,8 +22,11 @@ use App\Http\Controllers\DosenController;
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
 
+//MAHASISWA
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 
+
+//SEKPRODI
 Route::get('/sekprodi', [SekprodiController::class, 'index']);
 Route::get('/sekprodi/hari', [SekprodiController::class, 'hari']);
 Route::get('/sekprodi/ruang_kelas', [SekprodiController::class, 'ruang_kelas']);
@@ -38,4 +41,8 @@ Route::get('/sekprodi/laporan_dosen', [SekprodiController::class, 'laporan_dosen
 Route::get('/sekprodi/laporan_matakuliah', [SekprodiController::class, 'laporan_matakuliah']);
 Route::get('/sekprodi/laporan_dosen_pengampu', [SekprodiController::class, 'laporan_dosen_pengampu']);
 
+
+//DOSEN
 Route::get('/dosen', [DosenController::class, 'index']);
+Route::get('/dosen/absensi', [DosenController::class, 'absensi']);
+Route::get('/dosen/tugas', [DosenController::class, 'tugas']);
