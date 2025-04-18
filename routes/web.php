@@ -10,10 +10,12 @@ use App\Http\Controllers\Mahasiswa\MahasiswaController as MahasiswaController_Ma
 use App\Http\Controllers\Sekprodi\SekprodiController as SekprodiController_Sekprodi;
 use App\Http\Controllers\Sekprodi\HariController as HariController_Sekprodi;
 use App\Http\Controllers\Sekprodi\Ruang_KelasController as Ruang_KelasController_Sekprodi;
+use App\Http\Controllers\Sekprodi\KrsController as KrsController_Sekprodi;
 use App\Http\Controllers\Sekprodi\MahasiswaController as MahasiswaController_Sekprodi;
 use App\Http\Controllers\Sekprodi\DosenController as DosenController_Sekprodi;
 use App\Http\Controllers\Sekprodi\MatakuliahController as MatakuliahController_Sekprodi;
 use App\Http\Controllers\Sekprodi\ProdiController as ProdiController_Sekprodi;
+use App\Http\Controllers\Sekprodi\Dosen_PengampuController as Dosen_PengampuController_Sekprodi;
 
 use App\Http\Controllers\Dosen\DosenController as DosenController_Dosen;
 
@@ -38,12 +40,12 @@ Route::get('/mahasiswa', [MahasiswaController_Mahasiswa::class, 'index']);
 Route::get('/sekprodi', [SekprodiController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/hari', [HariController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/ruang_kelas', [Ruang_KelasController_Sekprodi::class, 'index']);
-Route::get('/sekprodi/krs', [SekprodiController_Sekprodi::class, 'krs']);
+Route::get('/sekprodi/krs', [KrsController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/mahasiswa', [MahasiswaController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/dosen', [DosenController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/matakuliah', [MatakuliahController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/prodi', [ProdiController_Sekprodi::class, 'index']);
-Route::get('/sekprodi/dosen_pengampu', [SekprodiController_Sekprodi::class, 'dosen_pengampu']);
+Route::get('/sekprodi/dosen_pengampu', [Dosen_PengampuController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/laporan_mahasiswa', [SekprodiController_Sekprodi::class, 'laporan_mahasiswa']);
 Route::get('/sekprodi/laporan_dosen', [SekprodiController_Sekprodi::class, 'laporan_dosen']);
 Route::get('/sekprodi/laporan_matakuliah', [SekprodiController_Sekprodi::class, 'laporan_matakuliah']);
