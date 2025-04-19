@@ -52,6 +52,16 @@ Route::get('/sekprodi/laporan_matakuliah', [SekprodiController_Sekprodi::class, 
 Route::get('/sekprodi/laporan_dosen_pengampu', [SekprodiController_Sekprodi::class, 'laporan_dosen_pengampu']);
 
 //DOSEN
-Route::get('/dosen', [DosenController::class, 'index']);
-Route::get('/dosen/absensi', [DosenController::class, 'absensi']);
-Route::get('/dosen/tugas', [DosenController::class, 'tugas']);
+Route::get('/dosen', [DosenController_Dosen::class, 'index']);
+Route::get('/dosen/absensi', [DosenController_Dosen::class, 'absensi']);
+Route::get('/dosen/tugas', [DosenController_Dosen::class, 'tugas']);
+Route::get('/dosen/nilai', [DosenController_Dosen::class, 'nilai']);
+Route::get('/dosen/krs', [DosenController_Dosen::class, 'krs']);
+Route::get('/dosen/bap_dosen', [DosenController_Dosen::class, 'bap_dosen']);
+Route::get('/dosen/presensi_nilai', [DosenController_Dosen::class, 'presensi_nilai']);
+Route::get('/dosen/dosen_pengampu', [DosenController_Dosen::class, 'dosen_pengampu']);
+Route::get('/dosen/bap_absensi', [DosenController_Dosen::class, 'bap_absensi']);
+Route::get('/dosen/laporan_bap_absensi', [DosenController_Dosen::class, 'laporan_bap_absensi']);
+Route::get('/dosen/laporan_bap_dosen', [DosenController_Dosen::class, 'laporan_bap_dosen']);
+Route::get('/dosen/laporan_presensi_nilai', [DosenController_Dosen::class, 'laporan_presensi_nilai']);
+Route::get('/dosen/laporan_dosen_pengampu', [DosenController_Dosen::class, 'laporan_dosen_pengampu']);
