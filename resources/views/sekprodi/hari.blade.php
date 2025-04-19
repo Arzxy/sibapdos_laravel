@@ -21,12 +21,13 @@ Hari
                 <label class="col-sm-2 col-form-label">Kode Hari</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" disabled="" value="123456">
+                    <input type="hidden" class="form-control" name="id_hari" value="123456">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="example-time">Nama Hari</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="nama_hari" class="form-control" placeholder="Masukan Nama Hari" required>
                 </div>
             </div>
             <div class="form-group mb-0 justify-content-end row">

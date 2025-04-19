@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dosen;
+
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +15,6 @@ class DosenController extends Controller
     public function absensi(){
         return view ('dosen.absensi');
     }
-    
     public function tugas(){
         return view ('dosen.tugas');
     }

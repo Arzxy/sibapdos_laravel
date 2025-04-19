@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Sekprodi;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class SekprodiController extends Controller
@@ -10,33 +11,9 @@ class SekprodiController extends Controller
     {
         return view('sekprodi.index');
     }
-    Public function hari()
-    {
-        return view('sekprodi.hari');
-    }
-    Public function ruang_kelas()
-    {
-        return view('sekprodi.ruang_kelas');
-    }
     Public function krs()
     {
         return view('sekprodi.krs');
-    }
-    Public function mahasiswa()
-    {
-        return view('sekprodi.mahasiswa');
-    }
-    Public function dosen()
-    {
-        return view('sekprodi.dosen');
-    }
-    Public function matakuliah()
-    {
-        return view('sekprodi.matakuliah');
-    }
-    Public function prodi()
-    {
-        return view('sekprodi.prodi');
     }
     Public function dosen_pengampu()
     {
