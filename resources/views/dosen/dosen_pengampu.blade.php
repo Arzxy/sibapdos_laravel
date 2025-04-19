@@ -5,7 +5,7 @@ Dosen
 @endsection
 
 @section('judul')
-Data Nilai
+Data Dosen Pengampu
 @endsection
 
 @section('kontent')
@@ -18,33 +18,27 @@ Data Nilai
 
         <form class="form-horizontal">
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Kode Tugas</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="kd_tugas" placeholder="Masukkan Kode Tugas">
-                </div>
-            </div>
-            <div class="form-group row">
                 <label class="col-sm-2 col-form-label">NIK Mahasiswa</label>
                 <div class="col-sm-10">
-                    <input type="text" name="nik_mhs" class="form-control" placeholder="Masukkan NIK Mahasiswa">
+                    <input type="text" class="form-control" name="NIK_Mhs" placeholder="Masukkan NIK Mahasiswa">
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nomor Tugas</label>
+                <label class="col-sm-2 col-form-label">Kode Matakuliah</label>
                 <div class="col-sm-10">
-                    <input type="number" name="no_tugas" class="form-control" placeholder="Masukkan Nomor Tugas">
+                    <input type="text" name="Kd_Matakuliah" class="form-control" placeholder="Masukkan Kode Matakuliah">
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nilai Tugas</label>
+                <label class="col-sm-2 col-form-label">Tahun Ajaran</label>
                 <div class="col-sm-10">
-                    <input type="number" name="nilai_tugas" class="form-control" placeholder="Masukkan Nilai Tugas" step="0.01">
+                    <input type="text" name="Tahun_ajaran" class="form-control" placeholder="Masukkan Tahun Ajaran (contoh: 2024/2025)">
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Keterangan Tugas</label>
+                <label class="col-sm-2 col-form-label">Nilai Matakuliah</label>
                 <div class="col-sm-10">
-                    <textarea name="ket_tugas" class="form-control" placeholder="Masukkan Keterangan Tugas" rows="3"></textarea>
+                    <input type="text" name="Nilai_Matkul" class="form-control" placeholder="Masukkan Nilai Matakuliah">
                 </div>
             </div>
             <div class="form-group mb-0 justify-content-end row">
@@ -64,11 +58,10 @@ Data Nilai
         <table id="datatable" class="table table-bordered dt-responsive nowrap responsive-table-plugin" style="width: 100%">
             <thead>
             <tr>
-                <th>Kode Tugas</th>
                 <th>NIK Mahasiswa</th>
-                <th>Nomor Tugas</th>
-                <th>Nilai Tugas</th>
-                <th>Keterangan</th>
+                <th>Kode Matakuliah</th>
+                <th>Tahun Ajaran</th>
+                <th>Nilai Matakuliah</th>
                 <th>Action</th>
             </tr>
             </thead>
@@ -76,11 +69,10 @@ Data Nilai
 
             <tbody>
             <tr>
-                <td>TGS001</td>
                 <td>2023010001</td>
-                <td>1</td>
-                <td>85.5</td>
-                <td>Tugas dikumpulkan tepat waktu</td>
+                <td>MK001</td>
+                <td>2024/2025</td>
+                <td>A</td>
                 <td>
                     <button type="button" class="btn btn-icon btn-warning waves-effect waves-light">Edit&ensp;<i class="mdi mdi-wrench"></i> </button>
                     <button type="button" class="btn btn-icon btn-danger waves-effect waves-light">Delete&ensp;<i class="mdi mdi-close"></i> </button>
