@@ -9,7 +9,6 @@ class Hari extends Model
 {
     use HasFactory;
     protected $table = 'tbl_hari';
-    protected $primaryKey = 'Id_Hari';
-    protected $fillable = ['Id_Hari ', 'Nm_Hari'];
+    protected $fillable = ['Id_Hari', 'Nm_Hari'];
     public $timestamps = false;
 }

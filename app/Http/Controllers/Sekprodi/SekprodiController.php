@@ -11,14 +11,6 @@ class SekprodiController extends Controller
     {
         return view('sekprodi.index');
     }
-    Public function krs()
-    {
-        return view('sekprodi.krs');
-    }
-    Public function dosen_pengampu()
-    {
-        return view('sekprodi.dosen_pengampu');
-    }
     Public function laporan_mahasiswa()
     {
         return view('sekprodi.laporan_mahasiswa');

@@ -15,13 +15,13 @@ Hari
             Mohon pastikan semua <code>data</code> yang Anda masukkan sudah benar dan sesuai dengan format yang diminta. 
             Hal ini <code>penting</code> untuk memastikan proses berjalan dengan lancar tanpa kesalahan.
         </p>
-
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="POST" action="/sekprodi/hari/store" enctype="multipart/form-data">
+            @csrf
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Kode Hari</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" disabled="" value="123456">
-                    <input type="hidden" class="form-control" name="id_hari" value="123456">
+                    <input type="text" class="form-control" disabled="" value="{{ $lastHaris }}" placeholder="Masukan Kode Hari" required>
+                    <input type="hidden" class="form-control" name="id" value="{{ $lastHaris }}">
                 </div>
             </div>
             <div class="form-group row">
@@ -35,7 +35,7 @@ Hari
                     <button type="submit" class="btn btn-info waves-effect waves-light">Buat</button>
                 </div>
                 <div class="p-1">
-                    <button type="submit" class="btn btn-secondary waves-effect waves-light">Batal</button>
+                    <a href="/sekprodi/hari" class="btn btn-secondary waves-effect waves-light">Batal</a>
                 </div>
             </div>
         </form>
@@ -53,16 +53,17 @@ Hari
             </tr>
             </thead>
 
-
             <tbody>
+            @foreach($hari as $x)
             <tr>
-                <td>HR001</td>
-                <td>Senin</td>
+                <td>{{ $x->Id_Hari }}</td>
+                <td>{{ $x->Nm_Hari }}</td>
                 <td>
                     <button type="button" class="btn btn-icon btn-warning waves-effect waves-light">Edit&ensp;<i class="mdi mdi-wrench"></i> </button>
-                    <button type="button" class="btn btn-icon btn-danger waves-effect waves-light">Delete&ensp;<i class="mdi mdi-close"></i> </button>
+                    <a href="/sekprodi/hari/delete/{{ $x->Id_Hari }}" onclick="return confirm('Yakin Hapus Data Ini ?')" class="btn btn-danger">Delete&ensp;<i class="mdi mdi-close"></i> </a>
                 </td>
             </tr>
+            @endforeach
             </tbody>
         </table>
     </div> <!-- end card-box -->

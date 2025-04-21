@@ -38,7 +38,11 @@ Route::get('/mahasiswa', [MahasiswaController_Mahasiswa::class, 'index']);
 
 //SEKPRODI
 Route::get('/sekprodi', [SekprodiController_Sekprodi::class, 'index']);
+
 Route::get('/sekprodi/hari', [HariController_Sekprodi::class, 'index']);
+Route::post('/sekprodi/hari/store', [HariController_Sekprodi::class, 'store']);
+Route::get('/sekprodi/hari/delete/{id}', [HariController_Sekprodi::class, 'delete']);
+
 Route::get('/sekprodi/ruang_kelas', [Ruang_KelasController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/krs', [KrsController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/mahasiswa', [MahasiswaController_Sekprodi::class, 'index']);
