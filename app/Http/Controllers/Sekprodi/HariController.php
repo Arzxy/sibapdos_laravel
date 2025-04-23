@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Sekprodi;
 use App\Http\Controllers\Controller;
 use App\Models\Hari;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HariController extends Controller
 {
@@ -34,7 +35,7 @@ class HariController extends Controller
     {
         $hari = Hari::where('Id_Hari', $id)->first();
         if ($hari) {
-            $hari->delete();
+            DB::table('tbl_hari')->where('Id_Hari', $id)->delete();
         }
         return redirect('/sekprodi/hari');
     }

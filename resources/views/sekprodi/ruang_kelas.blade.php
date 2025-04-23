@@ -16,23 +16,24 @@ Ruang Kelas
             Hal ini <code>penting</code> untuk memastikan proses berjalan dengan lancar tanpa kesalahan.
         </p>
 
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="POST" action="/sekprodi/ruang_kelas/store" enctype="multipart/form-data">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Kode Ruangan</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" disabled="" value="123456">
+                    <input type="text" class="form-control" disabled="" value="{{ $lastRuangs }}" placeholder="Masukan Kode Ruangan" required>
+                    <input type="hidden" class="form-control" name="Kd_Ruangan" value="{{ $lastRuangs }}">
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Nama Ruangan</label>
+                <label class="col-sm-2 col-form-label" for="Nm_Ruangan">Nama Ruangan</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="Nm_Ruangan" class="form-control" placeholder="Masukan Nama Ruangan">
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Jumlah Kapasitas</label>
+                <label class="col-sm-2 col-form-label" for="Jml_Kapasitas">Jumlah Kapasitas</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="Jml_Kapasitas" class="form-control" placeholder="Masukan Jumlah Ruangan">
                 </div>
             </div>
             <div class="form-group mb-0 justify-content-end row">
@@ -40,7 +41,7 @@ Ruang Kelas
                     <button type="submit" class="btn btn-info waves-effect waves-light">Buat</button>
                 </div>
                 <div class="p-1">
-                    <button type="submit" class="btn btn-secondary waves-effect waves-light">Batal</button>
+                    <a href="/sekprodi/ruang_kelas" class="btn btn-secondary waves-effect waves-light">Batal</a>
                 </div>
             </div>
         </form>
@@ -61,15 +62,17 @@ Ruang Kelas
 
 
             <tbody>
+            @foreach($ruang as $x)
             <tr>
-                <td>R0001</td>
-                <td>RUANG KELAS B5</td>
-                <td>30</td>
+                <td>{{ $x->Kd_Ruangan }}</td>
+                <td>{{ $x->Nm_Ruangan }}</td>
+                <td>{{ $x->Jml_Kapasitas }}</td>
                 <td>
                     <button type="button" class="btn btn-icon btn-warning waves-effect waves-light">Edit&ensp;<i class="mdi mdi-wrench"></i> </button>
-                    <button type="button" class="btn btn-icon btn-danger waves-effect waves-light">Delete&ensp;<i class="mdi mdi-close"></i> </button>
+                    <a href="/sekprodi/ruang_kelas/delete/{{ $x->Kd_Ruangan }}" onclick="return confirm('Yakin Hapus Data Ini ?')" class="btn btn-danger">Delete&ensp;<i class="mdi mdi-close"></i> </a>
                 </td>
             </tr>
+            @endforeach
             </tbody>
         </table>
     </div> <!-- end card-box -->

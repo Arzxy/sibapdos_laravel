@@ -10,7 +10,6 @@ use App\Http\Controllers\Mahasiswa\MahasiswaController as MahasiswaController_Ma
 use App\Http\Controllers\Sekprodi\SekprodiController as SekprodiController_Sekprodi;
 use App\Http\Controllers\Sekprodi\HariController as HariController_Sekprodi;
 use App\Http\Controllers\Sekprodi\Ruang_KelasController as Ruang_KelasController_Sekprodi;
-use App\Http\Controllers\Sekprodi\KrsController as KrsController_Sekprodi;
 use App\Http\Controllers\Sekprodi\MahasiswaController as MahasiswaController_Sekprodi;
 use App\Http\Controllers\Sekprodi\DosenController as DosenController_Sekprodi;
 use App\Http\Controllers\Sekprodi\MatakuliahController as MatakuliahController_Sekprodi;
@@ -44,7 +43,9 @@ Route::post('/sekprodi/hari/store', [HariController_Sekprodi::class, 'store']);
 Route::get('/sekprodi/hari/delete/{id}', [HariController_Sekprodi::class, 'delete']);
 
 Route::get('/sekprodi/ruang_kelas', [Ruang_KelasController_Sekprodi::class, 'index']);
-Route::get('/sekprodi/krs', [KrsController_Sekprodi::class, 'index']);
+Route::post('/sekprodi/ruang_kelas/store', [Ruang_KelasController_Sekprodi::class, 'store']);
+Route::get('/sekprodi/ruang_kelas/delete/{id}', [Ruang_KelasController_Sekprodi::class, 'delete']);
+
 Route::get('/sekprodi/mahasiswa', [MahasiswaController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/dosen', [DosenController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/matakuliah', [MatakuliahController_Sekprodi::class, 'index']);

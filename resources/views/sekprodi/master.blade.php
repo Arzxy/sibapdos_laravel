@@ -218,9 +218,6 @@
                                         <a href="/sekprodi/ruang_kelas">Data Ruang Kelas</a>
                                     </li>
                                     <li>
-                                        <a href="/sekprodi/krs">Data KRS</a>
-                                    </li>
-                                    <li>
                                         <a href="/sekprodi/mahasiswa">Data Mahasiswa</a>
                                     </li>
                                     <li>

@@ -9,7 +9,6 @@ class Ruang_Kelas extends Model
 {
     use HasFactory;
     protected $table = 'tbl_ruangankelas';
-    protected $primaryKey = 'Kd_Ruangan';
-    protected $fillable = ['Kd_Ruangan ', 'Nm_Ruangan', 'Jml_Kapasitas'];
+    protected $fillable = ['Kd_Ruangan', 'Nm_Ruangan', 'Jml_Kapasitas'];
     public $timestamps = false;
 }
