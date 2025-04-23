@@ -15,56 +15,65 @@ Mahasiswa
             Mohon pastikan semua <code>data</code> yang Anda masukkan sudah benar dan sesuai dengan format yang diminta. 
             Hal ini <code>penting</code> untuk memastikan proses berjalan dengan lancar tanpa kesalahan.
         </p>
-
-        <form class="form-horizontal">
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">NIM</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        <form class="form-horizontal" method="POST" action="/sekprodi/mahasiswa/store" enctype="multipart/form-data">
+        @csrf
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="NIK_Mhs">NIM</label>
+            <div class="col-sm-10">
+                <input type="text" name="NIK_Mhs" class="form-control" placeholder="Masukkan NIM Mahasiswa">
             </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Nama Mahasiswa</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="Nm_Mhs">Nama Mahasiswa</label>
+            <div class="col-sm-10">
+                <input type="text" name="Nm_Mhs" class="form-control" placeholder="Masukkan Nama Lengkap Mahasiswa">
             </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Jenis Kelamin</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="JK_Mhs">Jenis Kelamin</label>
+            <div class="col-sm-10">
+                <input type="text" name="JK_Mhs" class="form-control" placeholder="Masukkan Jenis Kelamin (L/P)">
             </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Tempat Lahir</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="tmptlahir_Mhs">Tempat Lahir</label>
+            <div class="col-sm-10">
+                <input type="text" name="tmptlahir_Mhs" class="form-control" placeholder="Masukkan Tempat Lahir">
             </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Tanggal Lahir</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="TglLahir_Mhs">Tanggal Lahir</label>
+            <div class="col-sm-10">
+                <input type="text" name="TglLahir_Mhs" class="form-control" placeholder="Masukkan Tanggal Lahir (YYYY-MM-DD)">
             </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Alamat</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="Alamat_Mhs">Alamat</label>
+            <div class="col-sm-10">
+                <input type="text" name="Alamat_Mhs" class="form-control" placeholder="Masukkan Alamat Lengkap">
             </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Prodi</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="Kd_Prodi">Prodi</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="Kd_Prodi">
+                    @foreach($prodi as $prod)
+                        <option value="{{ $prod->Kd_Prodi }}">{{ $prod->Nm_Prodi }}</option>
+                    @endforeach
+                </select>
             </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="example-time">Status Mahasiswa</label>
-                <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
-                </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="Status_Mhs">Status Mahasiswa</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="Status_Mhs">
+                    <option value="Aktif">Aktif</option>
+                    <option value="Tidak Aktif">Tidak Aktif</option>
+                    <option value="Cuti">Cuti</option>
+                    <option value="Dropout">Dropout</option>
+                </select>
             </div>
+        </div>
             <div class="form-group mb-0 justify-content-end row">
                 <div class="p-1">
                     <button type="submit" class="btn btn-info waves-effect waves-light">Buat</button>
@@ -94,22 +103,23 @@ Mahasiswa
             </tr>
             </thead>
 
-
             <tbody>
+            @foreach($mahasiswa as $x)
             <tr>
-                <td>202104001</td>
-                <td>ARDIYANA AKMAL</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>PR004</td>
-                <td>-</td>
+                <td>{{ $x->NIK_Mhs }}</td>
+                <td>{{ $x->Nm_Mhs }}</td>
+                <td>{{ $x->JK_Mhs }}</td>
+                <td>{{ $x->tmptlahir_Mhs }}</td>
+                <td>{{ $x->TglLahir_Mhs }}</td>
+                <td>{{ $x->Alamat_Mhs }}</td>
+                <td>{{ $x->Kd_Prodi }}</td>
+                <td>{{ $x->Status_Mhs }}</td>
                 <td>
                     <button type="button" class="btn btn-icon btn-warning waves-effect waves-light">Edit&ensp;<i class="mdi mdi-wrench"></i> </button>
-                    <button type="button" class="btn btn-icon btn-danger waves-effect waves-light">Delete&ensp;<i class="mdi mdi-close"></i> </button>
+                    <a href="/sekprodi/mahasiswa/delete/{{ $x->Kd_Ruangan }}" onclick="return confirm('Yakin Hapus Data Ini ?')" class="btn btn-danger">Delete&ensp;<i class="mdi mdi-close"></i> </a>
                 </td>
             </tr>
+            @endforeach
             </tbody>
         </table>
     </div> <!-- end card-box -->

@@ -47,6 +47,9 @@ Route::post('/sekprodi/ruang_kelas/store', [Ruang_KelasController_Sekprodi::clas
 Route::get('/sekprodi/ruang_kelas/delete/{id}', [Ruang_KelasController_Sekprodi::class, 'delete']);
 
 Route::get('/sekprodi/mahasiswa', [MahasiswaController_Sekprodi::class, 'index']);
+Route::post('/sekprodi/mahasiswa/store', [MahasiswaController_Sekprodi::class, 'store']);
+Route::get('/sekprodi/mahasiswa/delete/{id}', [MahasiswaController_Sekprodi::class, 'delete']);
+
 Route::get('/sekprodi/dosen', [DosenController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/matakuliah', [MatakuliahController_Sekprodi::class, 'index']);
 Route::get('/sekprodi/prodi', [ProdiController_Sekprodi::class, 'index']);

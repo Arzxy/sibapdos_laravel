@@ -8,8 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Prodi extends Model
 {
     use HasFactory;
-    protected $table = 'tbl_matakuliah';
-    protected $primaryKey = 'Kd_Prodi';
+    protected $table = 'tbl_prodi';
     protected $fillable = [
         'Kd_Prodi',
         'Nm_Prodi'

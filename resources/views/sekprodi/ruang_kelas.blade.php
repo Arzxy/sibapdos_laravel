@@ -15,8 +15,8 @@ Ruang Kelas
             Mohon pastikan semua <code>data</code> yang Anda masukkan sudah benar dan sesuai dengan format yang diminta. 
             Hal ini <code>penting</code> untuk memastikan proses berjalan dengan lancar tanpa kesalahan.
         </p>
-
         <form class="form-horizontal" method="POST" action="/sekprodi/ruang_kelas/store" enctype="multipart/form-data">
+        @csrf
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Kode Ruangan</label>
                 <div class="col-sm-10">
@@ -59,7 +59,6 @@ Ruang Kelas
                 <th>Action</th>
             </tr>
             </thead>
-
 
             <tbody>
             @foreach($ruang as $x)
