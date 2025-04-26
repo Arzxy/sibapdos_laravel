@@ -30,7 +30,7 @@ class Ruang_KelasController extends Controller
             'Nm_Ruangan' => $request->Nm_Ruangan,
             'Jml_Kapasitas' => $request->Jml_Kapasitas,
         ]);
-        return redirect('/sekprodi/ruang_kelas')->with('success', 'Data Hari Berhasil Ditambahkan');
+        return redirect('/sekprodi/ruang_kelas')->with('success', 'Data Ruang Kelas Berhasil Ditambahkan');
     }
     Public function delete($id)
     {

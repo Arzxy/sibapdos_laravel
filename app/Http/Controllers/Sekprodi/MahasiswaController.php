@@ -28,14 +28,14 @@ class MahasiswaController extends Controller
             'Kd_Prodi' => $request->Kd_Prodi,
             'Status_Mhs' => $request->Status_Mhs,
         ]);
-        return redirect('/sekprodi/mahasiswa')->with('success', 'Data Hari Berhasil Ditambahkan');
+        return redirect('/sekprodi/mahasiswa')->with('success', 'Data Mahasiswa Berhasil Ditambahkan');
     }
     Public function delete($id)
     {
         
-        $ruang = Mahasiswa::where('Kd_Ruangan', $id)->first();
+        $ruang = Mahasiswa::where('NIK_Mhs', $id)->first();
         if ($ruang) {
-            DB::table('tbl_ruangankelas')->where('Kd_Ruangan', $id)->delete();
+            DB::table('tbl_mahasiswa')->where('NIK_Mhs', $id)->delete();
         }
         return redirect('/sekprodi/mahasiswa');
     }

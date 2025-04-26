@@ -32,7 +32,10 @@ Mahasiswa
         <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="JK_Mhs">Jenis Kelamin</label>
             <div class="col-sm-10">
-                <input type="text" name="JK_Mhs" class="form-control" placeholder="Masukkan Jenis Kelamin (L/P)">
+                <select class="form-control" name="JK_Mhs">
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
             </div>
         </div>
         <div class="form-group row">
@@ -44,7 +47,7 @@ Mahasiswa
         <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="TglLahir_Mhs">Tanggal Lahir</label>
             <div class="col-sm-10">
-                <input type="text" name="TglLahir_Mhs" class="form-control" placeholder="Masukkan Tanggal Lahir (YYYY-MM-DD)">
+                <input type="date" name="TglLahir_Mhs" class="form-control">
             </div>
         </div>
         <div class="form-group row">
@@ -79,7 +82,7 @@ Mahasiswa
                     <button type="submit" class="btn btn-info waves-effect waves-light">Buat</button>
                 </div>
                 <div class="p-1">
-                    <button type="submit" class="btn btn-secondary waves-effect waves-light">Batal</button>
+                    <a href="/sekprodi/mahasiswa" class="btn btn-secondary waves-effect waves-light">Batal</a>
                 </div>
             </div>
         </form>
@@ -116,7 +119,7 @@ Mahasiswa
                 <td>{{ $x->Status_Mhs }}</td>
                 <td>
                     <button type="button" class="btn btn-icon btn-warning waves-effect waves-light">Edit&ensp;<i class="mdi mdi-wrench"></i> </button>
-                    <a href="/sekprodi/mahasiswa/delete/{{ $x->Kd_Ruangan }}" onclick="return confirm('Yakin Hapus Data Ini ?')" class="btn btn-danger">Delete&ensp;<i class="mdi mdi-close"></i> </a>
+                    <a href="/sekprodi/mahasiswa/delete/{{ $x->NIK_Mhs }}" onclick="return confirm('Yakin Hapus Data Ini ?')" class="btn btn-danger">Delete&ensp;<i class="mdi mdi-close"></i> </a>
                 </td>
             </tr>
             @endforeach
