@@ -9,7 +9,6 @@ class Matakuliah extends Model
 {
     use HasFactory;
     protected $table = 'tbl_matakuliah';
-    protected $primaryKey = 'Kd_Matkuliah';
     protected $fillable = [
         'Kd_Matkuliah',
         'Nm_Matakuliah',

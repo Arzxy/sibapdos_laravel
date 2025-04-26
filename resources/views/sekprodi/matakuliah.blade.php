@@ -20,37 +20,44 @@ Matakuliah
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Kode Matakuliah</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="Kd_Matkuliah" class="form-control" placeholder="Masukkan Kode Matakuliah">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="example-time">Nama Matakuliah</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="Nm_Matakuliah" class="form-control" placeholder="Masukkan Nama Matakuliah">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="example-time">SKS</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <select class="form-control" name="Sks_Matakuliah">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="example-time">SKS Teori</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="Teori_Matkuliah" class="form-control" placeholder="Masukkan SKS Teori">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="example-time">SKS Praktek</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="Praktek_Matkuliah" class="form-control" placeholder="Masukkan SKS Praktek">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="example-time">Semester</label>
                 <div class="col-sm-10">
-                    <input type="text" name="example-email" class="form-control" placeholder="...">
+                    <input type="text" name="Smester_Matakuliah" class="form-control" placeholder="Masukkan Semester">
                 </div>
             </div>
             <div class="form-group mb-0 justify-content-end row">
@@ -81,18 +88,20 @@ Matakuliah
 
 
             <tbody>
+            @foreach($matakuliah as $x)
             <tr>
-                <td>MKK101</td>
-                <td>Pengantar Manufaktur Tekstil</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>4</td>
+                <td>{{ $x->Kd_Matkuliah }}</td>
+                <td>{{ $x->Nm_Matakuliah }}</td>
+                <td>{{ $x->Sks_Matakuliah }}</td>
+                <td>{{ $x->Teori_Matkuliah }}</td>
+                <td>{{ $x->Praktek_Matkuliah }}</td>
+                <td>{{ $x->Smester_Matakuliah }}</td>
                 <td>
                     <button type="button" class="btn btn-icon btn-warning waves-effect waves-light">Edit&ensp;<i class="mdi mdi-wrench"></i> </button>
-                    <button type="button" class="btn btn-icon btn-danger waves-effect waves-light">Delete&ensp;<i class="mdi mdi-close"></i> </button>
+                    <a href="/sekprodi/matakuliah/delete/{{ $x->Kd_Matkuliah }}" onclick="return confirm('Yakin Hapus Data Ini ?')" class="btn btn-danger">Delete&ensp;<i class="mdi mdi-close"></i> </a>
                 </td>
             </tr>
+            @endforeach
             </tbody>
         </table>
     </div> <!-- end card-box -->

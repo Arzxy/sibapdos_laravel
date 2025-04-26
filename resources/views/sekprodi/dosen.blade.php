@@ -68,6 +68,14 @@ Dosen
                     <input type="email" name="Email_Dosen" class="form-control" placeholder="Masukkan Email">
                 </div>
             </div>
+            <div class="form-group mb-0 justify-content-end row">
+                <div class="p-1">
+                    <button type="submit" class="btn btn-info waves-effect waves-light">Buat</button>
+                </div>
+                <div class="p-1">
+                    <a href="/sekprodi/dosen" class="btn btn-secondary waves-effect waves-light">Batal</a>
+                </div>
+            </div>
         </form>
     </div> <!-- end card-box -->
 </div><!-- end col -->

@@ -17,7 +17,7 @@ class DosenController extends Controller
         $prodi = Prodi::All();
 
         if ($lastDosen) {
-            $lastId = $lastDosen->Kd_Ruangan;
+            $lastId = $lastDosen->Kd_Dosen;
             $number = (int) substr($lastId, 2);
             $lastDosens = '13' . str_pad($number + 1, 4, '0', STR_PAD_LEFT);
         } else {
