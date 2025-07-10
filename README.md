@@ -1,15 +1,19 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📁 Nama Proyek
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi Web ini dirancang dari request dosen hasil outputnya adalah untuk memudahan dalam absensi
 
-## Baca dan pahamin
+---
 
-- U (Untracked) = file yang belum pernah dimasukkan ke dalam Git (file baru)
-- M (Modified) = file yang udah masuk ke dalam database Git dan udah pernah dimodifikasi
-- D (Deleted) = file yang dihapus
-- A (Added) = file yang ditambahkan ke dalam mode staged
+## 👥 Kolaborator
+
+Proyek ini dibangun bersama oleh beberapa kontributor. Berikut daftar kolaborator aktif:
+
+| Nama Lengkap            | Username GitHub                                   | Kontribusi Utama              |
+|-------------------------|------------------------------------------------|-------------------------------|
+| Muhammad Akmal Rizki    | [@arzxy](https://github.com/arzxy)                 | Backend             |
+| Zalfa Noor Rana Santoso | [@zalfarana](https://github.com/zalfarana)     | Analisis Perancangan             |
+| NaufalP024   | [@NaufalP024](https://github.com/NaufalP024) | Frontend             |
+| Muhammad Najwan Naufal Alfarid   | [@wanfalrid](https://github.com/wanfalrid) | Backend             |
+| Arya Maulana   | [@aoki110803](https://github.com/aoki110803) | Analisi Perancangan             |
+
+---
